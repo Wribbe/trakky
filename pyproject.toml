@@ -1,0 +1,10 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trakky"
+dynamic = ["version"]
+
+[project.scripts]
+trakky = "trakky:main.cli"
