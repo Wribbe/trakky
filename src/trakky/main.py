@@ -3,7 +3,7 @@ from pathlib import Path
 
 class PATH(Path):
     def __init__(self, *args, **kwargs):
-        Path.__init__(*args, **kwargs)
+        Path.__init__(self, *args, **kwargs)
 
         if self.exists():
             return
