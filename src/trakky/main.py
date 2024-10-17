@@ -1,3 +1,6 @@
+import sys
+
+
 from pathlib import Path
 
 
@@ -18,9 +21,9 @@ class PATH(Path):
             self.write_text("{}")
 
 
-def run():
+def main(args):
     print("WE ARE RUNNING")
 
 
 def cli():
-    run()
+    main(sys.argv[1:])
